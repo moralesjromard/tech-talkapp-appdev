@@ -44,7 +44,7 @@ export default class Posts extends Component {
       <View style={styles.container}>
         <ScrollView style={{ paddingHorizontal: 25 }}>
           <Text style={styles.topText}>Posts</Text>
-          {this.state.posts.length ? (
+          {this.state.posts && this.state.posts.length ? (
             this.state.posts.map((post) => (
               <View
                 key={post.id}
