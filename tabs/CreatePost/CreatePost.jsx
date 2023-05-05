@@ -40,6 +40,7 @@ export default class CreatePost extends Component {
       console.log(error);
     }
   }
+
   render() {
     return (
       <View style={styles.container}>
