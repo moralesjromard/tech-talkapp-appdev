@@ -34,7 +34,7 @@ export default class Posts extends Component {
   componentDidUpdate(prevState) {
     if (prevState !== this.state.posts) {
       setTimeout(() => {
-        this.posts();
+        this.getPosts();
       }, 2500);
     }
   }
