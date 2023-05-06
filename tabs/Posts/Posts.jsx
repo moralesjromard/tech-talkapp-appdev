@@ -40,6 +40,7 @@ export default class Posts extends Component {
   }
 
   render() {
+    console.log('hello');
     return (
       <View style={styles.container}>
         <ScrollView style={{ paddingHorizontal: 25 }}>
