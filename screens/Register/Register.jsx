@@ -29,6 +29,8 @@ export default class Register extends Component {
   }
 
   async register() {
+    this.resetState();
+
     if ((this.state.firstName === '' || this.state.lastName === '' || this.state.email === '', this.state.password === '' || this.state.passwordConfirmation === '')) {
       this.setState({ errorMessage: 'All fields is required' });
     } else if (this.state.password !== this.state.passwordConfirmation) {

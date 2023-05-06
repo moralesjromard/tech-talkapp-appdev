@@ -21,6 +21,8 @@ export default class CreatePost extends Component {
   }
 
   async createPost() {
+    this.resetState();
+
     const data = {
       post: this.state.post,
     };
